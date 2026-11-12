@@ -36,5 +36,5 @@ jobs:
           context: .
           push: true
           tags: |
-            YOUR_DOCKERHUB_USERNAME/inter1:latest
-            YOUR_DOCKERHUB_USERNAME/inter1:${{ github.sha }}
+            ${{ secrets.DOCKER_USERNAME }}/inter1:latest
+            ${{ secrets.DOCKER_USERNAME }}/inter1:${{ github.sha }}
